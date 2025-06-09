@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Soumettre un résumé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Soumettre un résumé</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="evenements.html">Événements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Veuillez remplir le formulaire ci-dessous pour soumettre votre résumé en vue des Journées Scientifiques 2025. N'oubliez pas que la date limite est le <strong>31 mai 2025</strong>.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nom">Nom complet :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Adresse email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="titre">Titre du résumé :</label><br>
+        <input type="text" id="titre" name="titre" required><br><br>
+
+        <label for="theme">Sous-thème (facultatif) :</label><br>
+        <input type="text" id="theme" name="theme"><br><br>
+
+        <label for="resume">Résumé (texte) :</label><br>
+        <textarea id="resume" name="resume" rows="6" required></textarea><br><br>
+
+        <label for="fichier">Téléverser un fichier PDF (optionnel) :</label><br>
+        <input type="file" id="fichier" name="fichier" accept=".pdf"><br><br>
+
+        <button type="submit">Soumettre</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Association des Internes</p>
+  </footer>
+</body>
+</html>
